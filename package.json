@@ -8,7 +8,8 @@
     "start:api": "nx serve api",
     "build": "nx run-many --target=build --projects=web,api",
     "build:web": "nx build web",
-    "build:api": "nx build api"
+    "build:api": "nx build api",
+    "update": "nx migrate latest"
   },
   "private": true,
   "dependencies": {
