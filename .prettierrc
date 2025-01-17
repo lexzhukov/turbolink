@@ -1,3 +1,21 @@
 {
-  "singleQuote": true
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "importOrder": [
+    "<BUILTIN_MODULES>",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@turbolink/(.*)$",
+    "",
+    "^[.]"
+  ],
+  "importOrderParserPlugins": ["typescript", "decorators-legacy"],
+  "importOrderTypeScriptVersion": "5.6.3",
+  "importOrderCaseSensitive": true
 }
