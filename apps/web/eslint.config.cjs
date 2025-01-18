@@ -24,6 +24,13 @@ module.exports = [
           style: 'kebab-case',
         },
       ],
+      '@angular-eslint/component-class-suffix': [
+        'error',
+        {
+          suffixes: ['Component', 'Page'],
+        },
+      ],
+      '@angular-eslint/no-input-rename': 'off',
     },
   },
   {
